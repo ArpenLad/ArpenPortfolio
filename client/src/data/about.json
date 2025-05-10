@@ -1,0 +1,32 @@
+{
+  "name": "Jane Doe",
+  "title": "Software Engineer",
+  "location": "San Francisco, CA",
+  "bio": [
+    "Hello! I'm Jane, a software engineer based in San Francisco, CA. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.",
+    "After graduating with a degree in Computer Science from UC Berkeley, I joined the engineering team at TechCorp where I work on a wide variety of interesting and meaningful projects on a daily basis."
+  ],
+  "recentTech": [
+    "JavaScript (ES6+)",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "GraphQL",
+    "Tailwind CSS"
+  ],
+  "contact": {
+    "email": "jane.doe@example.com",
+    "phone": "+1 (415) 555-1234",
+    "social": {
+      "github": "https://github.com/your-username",
+      "linkedin": "https://linkedin.com/in/your-profile",
+      "twitter": "https://twitter.com/your-handle"
+    }
+  },
+  "availableFor": [
+    "Freelance Projects",
+    "Full-time Positions",
+    "Consulting",
+    "Speaking Engagements"
+  ]
+}
