@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import aboutData from '@/data/about.json';
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -41,19 +42,12 @@ export default function ContactSection() {
     }, 1000);
   };
 
-  const availableFor = [
-    "Freelance Projects",
-    "Full-time Positions",
-    "Consulting",
-    "Speaking Engagements"
-  ];
-
   return (
     <section id="contact" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 animate-slide-in">
-            <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
+            <h2 className="text-3xl font-bold mb-2 text-white">Get In Touch</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
               I'll try my best to get back to you!
@@ -116,14 +110,14 @@ export default function ContactSection() {
 
             <div className="space-y-8 animate-slide-in" style={{ animationDelay: "0.4s" }}>
               <div>
-                <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="text-primary mt-1 mr-3">
                       <i className="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                      <p className="text-gray-300">San Francisco, CA</p>
+                      <p className="text-gray-300">{aboutData.location}</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -131,8 +125,8 @@ export default function ContactSection() {
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div>
-                      <a href="mailto:jane.doe@example.com" className="text-gray-300 hover:text-white transition-colors">
-                        jane.doe@example.com
+                      <a href={`mailto:${aboutData.contact.email}`} className="text-gray-300 hover:text-white transition-colors">
+                        {aboutData.contact.email}
                       </a>
                     </div>
                   </div>
@@ -141,8 +135,8 @@ export default function ContactSection() {
                       <i className="fas fa-phone"></i>
                     </div>
                     <div>
-                      <a href="tel:+14155551234" className="text-gray-300 hover:text-white transition-colors">
-                        +1 (415) 555-1234
+                      <a href={`tel:${aboutData.contact.phone.replace(/\s/g, '')}`} className="text-gray-300 hover:text-white transition-colors">
+                        {aboutData.contact.phone}
                       </a>
                     </div>
                   </div>
@@ -150,10 +144,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com/your-username" 
+                    href={aboutData.contact.social.github} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-all duration-300"
@@ -162,7 +156,7 @@ export default function ContactSection() {
                     <i className="fab fa-github text-xl"></i>
                   </a>
                   <a 
-                    href="https://linkedin.com/in/your-profile" 
+                    href={aboutData.contact.social.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-all duration-300"
@@ -171,7 +165,7 @@ export default function ContactSection() {
                     <i className="fab fa-linkedin-in text-xl"></i>
                   </a>
                   <a 
-                    href="https://twitter.com/your-handle" 
+                    href={aboutData.contact.social.twitter} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-all duration-300"
@@ -179,23 +173,14 @@ export default function ContactSection() {
                   >
                     <i className="fab fa-twitter text-xl"></i>
                   </a>
-                  <a 
-                    href="https://instagram.com/your-profile" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-all duration-300"
-                    aria-label="Instagram"
-                  >
-                    <i className="fab fa-instagram text-xl"></i>
-                  </a>
                 </div>
               </div>
 
               <Card className="bg-gray-900">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Available For</h3>
-                  <ul className="space-y-2">
-                    {availableFor.map((item, index) => (
+                  <h3 className="text-xl font-semibold mb-2 text-white">Available For</h3>
+                  <ul className="space-y-2 text-gray-300">
+                    {aboutData.availableFor.map((item, index) => (
                       <li key={index} className="flex items-center">
                         <i className="fas fa-check text-primary mr-2"></i>
                         <span>{item}</span>
