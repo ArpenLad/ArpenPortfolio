@@ -13,11 +13,17 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 animate-slide-in" style={{ animationDelay: "0.2s" }}>
-            <img 
-              src="https://pixabay.com/get/g71044edc5622dccaadaa7539b1b74bb87bcfac94a748e86546b1af36e21b7137a2ac2d8e04b4174c054f6427b6ccfd79a683e2ec62da39d4583774ad82ddab5e_1280.jpg" 
-              alt="Jane working at her desk" 
-              className="rounded-lg shadow-xl mx-auto w-full max-w-lg" 
-            />
+            <div className="relative bg-gradient-to-tr from-primary/20 to-primary/50 p-1 rounded-lg shadow-xl max-w-lg mx-auto">
+              <div className="bg-gray-800 rounded-lg p-8 flex flex-col items-center justify-center">
+                <div className="w-48 h-48 rounded-full bg-gradient-to-tr from-primary to-blue-600 flex items-center justify-center">
+                  <span className="text-6xl text-white font-bold">JD</span>
+                </div>
+                <div className="mt-6 text-center">
+                  <h3 className="text-xl font-semibold text-white mb-1">Jane Doe</h3>
+                  <p className="text-gray-300">Software Engineer</p>
+                </div>
+              </div>
+            </div>
           </div>
           
           <div className="md:w-1/2 animate-slide-in" style={{ animationDelay: "0.4s" }}>

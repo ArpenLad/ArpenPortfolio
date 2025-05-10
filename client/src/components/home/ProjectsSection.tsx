@@ -32,7 +32,7 @@ function ProjectCard({
       </div>
       <CardContent className="p-6">
         <div className="flex justify-between items-center mb-3">
-          <h3 className="font-bold text-xl">{title}</h3>
+          <h3 className="font-bold text-xl text-white">{title}</h3>
           <div className="flex space-x-2">
             <a 
               href={githubUrl} 
@@ -57,7 +57,7 @@ function ProjectCard({
         <p className="text-gray-400 mb-4">{description}</p>
         <div className="flex flex-wrap gap-2 text-xs">
           {technologies.map((tech, index) => (
-            <span key={index} className="px-2 py-1 bg-gray-700 rounded-full">{tech}</span>
+            <span key={index} className="px-2 py-1 bg-gray-700 text-gray-200 rounded-full">{tech}</span>
           ))}
         </div>
       </CardContent>

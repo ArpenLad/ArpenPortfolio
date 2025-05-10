@@ -37,7 +37,7 @@ function SkillCategory({
         <div className="text-primary text-3xl mb-4">
           <i className={icon}></i>
         </div>
-        <h3 className="text-xl font-semibold mb-3">{title}</h3>
+        <h3 className="text-xl font-semibold mb-3 text-white">{title}</h3>
         <div className="space-y-2">
           {skills.map((skill, index) => (
             <SkillItem key={index} name={skill.name} percentage={skill.percentage} />
@@ -73,7 +73,7 @@ export default function SkillsSection() {
         </div>
 
         <div className="mt-16 animate-slide-in" style={{ animationDelay: "0.8s" }}>
-          <h3 className="text-xl font-semibold mb-6 text-center">All Technologies</h3>
+          <h3 className="text-xl font-semibold mb-6 text-center text-white">All Technologies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {constants.allTechnologies.map((tech, index) => (
               <span 

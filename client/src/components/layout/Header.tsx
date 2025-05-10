@@ -6,6 +6,7 @@ import { Menu } from "lucide-react";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   // Toggle mobile menu
   const toggleMobileMenu = () => {
@@ -17,10 +18,27 @@ export default function Header() {
     setMobileMenuOpen(false);
   };
 
-  // Add scroll effect
+  // Add scroll effect and section highlighting
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      
+      // Check which section is currently in view
+      const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
+      const sectionElements = sections.map(id => document.getElementById(id));
+      
+      const currentPosition = window.scrollY + 200; // Adding offset to improve detection
+      
+      for (let i = sectionElements.length - 1; i >= 0; i--) {
+        const section = sectionElements[i];
+        if (section) {
+          const sectionTop = section.offsetTop;
+          if (currentPosition >= sectionTop) {
+            setActiveSection(sections[i]);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,6 +46,9 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Function to determine if a nav link is active
+  const isActive = (section: string) => activeSection === section;
 
   return (
     <header className={`fixed w-full top-0 z-50 bg-gray-900/50 backdrop-blur-md transition-all duration-300 ${scrolled ? 'shadow-md' : ''}`}>
@@ -41,10 +62,34 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-300">About</a>
-            <a href="#projects" className="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
-            <a href="#skills" className="text-gray-300 hover:text-white transition-colors duration-300">Skills</a>
-            <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            <a 
+              href="#about" 
+              className={`relative transition-colors duration-300 ${isActive('about') ? 'text-white font-medium' : 'text-gray-300 hover:text-white'}`}
+            >
+              About
+              {isActive('about') && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform -translate-y-1"></span>}
+            </a>
+            <a 
+              href="#projects" 
+              className={`relative transition-colors duration-300 ${isActive('projects') ? 'text-white font-medium' : 'text-gray-300 hover:text-white'}`}
+            >
+              Projects
+              {isActive('projects') && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform -translate-y-1"></span>}
+            </a>
+            <a 
+              href="#skills" 
+              className={`relative transition-colors duration-300 ${isActive('skills') ? 'text-white font-medium' : 'text-gray-300 hover:text-white'}`}
+            >
+              Skills
+              {isActive('skills') && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform -translate-y-1"></span>}
+            </a>
+            <a 
+              href="#contact" 
+              className={`relative transition-colors duration-300 ${isActive('contact') ? 'text-white font-medium' : 'text-gray-300 hover:text-white'}`}
+            >
+              Contact
+              {isActive('contact') && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform -translate-y-1"></span>}
+            </a>
             <Button variant="default" asChild>
               <a href="#" className="bg-primary hover:bg-primary/90">Resume</a>
             </Button>
@@ -66,28 +111,28 @@ export default function Header() {
           <div className="flex flex-col space-y-4">
             <a 
               href="#about" 
-              className="text-gray-300 hover:text-white transition-colors duration-300"
+              className={`relative ${isActive('about') ? 'text-white font-medium pl-3 border-l-2 border-primary' : 'text-gray-300 hover:text-white'} transition-colors duration-300`}
               onClick={handleLinkClick}
             >
               About
             </a>
             <a 
               href="#projects" 
-              className="text-gray-300 hover:text-white transition-colors duration-300"
+              className={`relative ${isActive('projects') ? 'text-white font-medium pl-3 border-l-2 border-primary' : 'text-gray-300 hover:text-white'} transition-colors duration-300`}
               onClick={handleLinkClick}
             >
               Projects
             </a>
             <a 
               href="#skills" 
-              className="text-gray-300 hover:text-white transition-colors duration-300"
+              className={`relative ${isActive('skills') ? 'text-white font-medium pl-3 border-l-2 border-primary' : 'text-gray-300 hover:text-white'} transition-colors duration-300`}
               onClick={handleLinkClick}
             >
               Skills
             </a>
             <a 
               href="#contact" 
-              className="text-gray-300 hover:text-white transition-colors duration-300"
+              className={`relative ${isActive('contact') ? 'text-white font-medium pl-3 border-l-2 border-primary' : 'text-gray-300 hover:text-white'} transition-colors duration-300`}
               onClick={handleLinkClick}
             >
               Contact
