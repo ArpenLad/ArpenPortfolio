@@ -40,7 +40,8 @@ var vite_config_default = defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true
-  }
+  },
+  base: "/ArpenPortfolio/"
 });
 
 // server/vite.ts
