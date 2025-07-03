@@ -1,26 +1,9 @@
 [
   {
-    "title": "E-commerce Platform",
-    "description": "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+    "title": "PersonalBudget",
+    "description": "A dashboard which can help to add/delete expences, incomes and categories and help to track the personal finance.",
     "imageSrc": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-    "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-    "githubUrl": "#",
-    "liveUrl": "#"
-  },
-  {
-    "title": "Weather Dashboard",
-    "description": "Real-time weather application with forecast data, weather maps, and location-based services.",
-    "imageSrc": "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-    "technologies": ["JavaScript", "React", "OpenWeather API", "GeoLocation"],
-    "githubUrl": "#",
-    "liveUrl": "#"
-  },
-  {
-    "title": "Task Manager",
-    "description": "A Kanban-style task management app with drag-and-drop interface, task assignment, and deadline tracking.",
-    "imageSrc": "https://pixabay.com/get/g3e2c681406e216c1863003f093828cbd6fe723acf33814487f31f8a4d3d1ad3eba0f387effcf44ad3700ae1b072307048333de9aa58ad46fac08c04279260a83_1280.jpg",
-    "technologies": ["TypeScript", "React", "Firebase", "React DnD"],
-    "githubUrl": "#",
-    "liveUrl": "#"
+    "technologies": ["React", "Node.js", "Postgress DB", "Docker"],
+    "githubUrl": "https://github.com/ArpenLad/PersonalBudget"
   }
 ]

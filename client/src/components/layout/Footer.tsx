@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import aboutData from '@/data/about.json';
 
 export default function Footer() {
   return (
@@ -8,14 +9,14 @@ export default function Footer() {
           <div className="mb-4 md:mb-0">
             <Link href="#" className="text-xl font-bold text-white flex items-center">
               <span className="text-primary mr-1">&lt;</span>
-              <span>Jane Doe</span>
+              <span>Arpen Lad</span>
               <span className="text-primary ml-1">/&gt;</span>
             </Link>
           </div>
 
           <div className="flex space-x-6 mb-4 md:mb-0">
             <a 
-              href="https://github.com/your-username" 
+              href={aboutData.contact.social.github} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -24,7 +25,7 @@ export default function Footer() {
               <i className="fab fa-github text-xl"></i>
             </a>
             <a 
-              href="https://linkedin.com/in/your-profile" 
+              href={aboutData.contact.social.linkedin}  
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -32,7 +33,7 @@ export default function Footer() {
             >
               <i className="fab fa-linkedin-in text-xl"></i>
             </a>
-            <a 
+            {/* <a 
               href="https://twitter.com/your-handle" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -40,7 +41,7 @@ export default function Footer() {
               aria-label="Twitter"
             >
               <i className="fab fa-twitter text-xl"></i>
-            </a>
+            </a> */}
             <a 
               href="mailto:jane.doe@example.com" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -51,7 +52,7 @@ export default function Footer() {
           </div>
 
           <div className="text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} Jane Doe. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Arpen Lad. All rights reserved.</p>
           </div>
         </div>
       </div>

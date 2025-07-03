@@ -1,32 +1,30 @@
 {
-  "name": "Jane Doe",
+  "name": "Arpen Lad",
   "title": "Software Engineer",
-  "location": "San Francisco, CA",
+  "location": "Banglore, India",
   "bio": [
-    "Hello! I'm Jane, a software engineer based in San Francisco, CA. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.",
-    "After graduating with a degree in Computer Science from UC Berkeley, I joined the engineering team at TechCorp where I work on a wide variety of interesting and meaningful projects on a daily basis."
+    "Hi! I am a Arpen Lad, Software Engineer with 5.5 years of experience in designing and developing full stack systems using Java, Spring Boot, and Node.js. I began my career at Thermofisher scintific, where I worked for 4.5 years as a full stack webdeveloper, where I worked on both Java springboot and Node js UI with express and handle bars framework.Currently, I’m working at Vantive health care, where I focus on building robust solutions using Java and Spring.", 
+    "My experience spans building microservices, deploying with Docker, and leveraging AWS for cloud infrastructure. I’m passionate about writing clean, maintainable code and solving real-world problems through efficient software design."
   ],
   "recentTech": [
-    "JavaScript (ES6+)",
-    "React",
+    "Java",
+    "Springboot",
+    "JavaScript",
     "Node.js",
-    "TypeScript",
-    "GraphQL",
-    "Tailwind CSS"
+    "Docker",
+    "AWS",
+    "SQL",
+    "Solr(NoSQL)"
   ],
   "contact": {
-    "email": "jane.doe@example.com",
-    "phone": "+1 (415) 555-1234",
+    "email": "workwitha.19@gmail.com",
     "social": {
-      "github": "https://github.com/your-username",
-      "linkedin": "https://linkedin.com/in/your-profile",
-      "twitter": "https://twitter.com/your-handle"
+      "github": "https://github.com/ArpenLad",
+      "linkedin": "https://www.linkedin.com/in/arpen-lad-0ba056150"
     }
   },
   "availableFor": [
     "Freelance Projects",
-    "Full-time Positions",
-    "Consulting",
-    "Speaking Engagements"
+    "Full-time Positions"
   ]
 }

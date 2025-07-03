@@ -56,7 +56,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <Link href="#" className="text-xl font-bold text-white flex items-center">
             <span className="text-primary mr-1">&lt;</span>
-            <span>Jane Doe</span>
+            <span>Arpen Lad</span>
             <span className="text-primary ml-1">/&gt;</span>
           </Link>
           
@@ -90,9 +90,9 @@ export default function Header() {
               Contact
               {isActive('contact') && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform -translate-y-1"></span>}
             </a>
-            <Button variant="default" asChild>
+            {/* <Button variant="default" asChild>
               <a href="#" className="bg-primary hover:bg-primary/90">Resume</a>
-            </Button>
+            </Button> */}
           </nav>
           
           {/* Mobile menu button */}

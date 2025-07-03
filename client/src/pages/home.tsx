@@ -10,7 +10,7 @@ import { useEffect } from "react";
 export default function Home() {
   // Update title on component mount
   useEffect(() => {
-    document.title = "Jane Doe | Software Engineer";
+    document.title = "Arpen Lad | Software Engineer";
   }, []);
 
   return (

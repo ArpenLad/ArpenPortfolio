@@ -130,7 +130,7 @@ export default function ContactSection() {
                       </a>
                     </div>
                   </div>
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="text-primary mt-1 mr-3">
                       <i className="fas fa-phone"></i>
                     </div>
@@ -139,7 +139,7 @@ export default function ContactSection() {
                         {aboutData.contact.phone}
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -164,7 +164,7 @@ export default function ContactSection() {
                   >
                     <i className="fab fa-linkedin-in text-xl"></i>
                   </a>
-                  <a 
+                  {/* <a 
                     href={aboutData.contact.social.twitter} 
                     target="_blank" 
                     rel="noopener noreferrer" 
@@ -172,7 +172,7 @@ export default function ContactSection() {
                     aria-label="Twitter"
                   >
                     <i className="fab fa-twitter text-xl"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
