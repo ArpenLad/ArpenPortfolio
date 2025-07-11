@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import imageUrl from "../../assets/arpen_1.jpg";
 
 export default function HeroSection() {
   return (
@@ -18,8 +19,8 @@ export default function HeroSection() {
             </h2>
             <p className="text-gray-300 text-lg mb-8 max-w-xl">
               I'm a software engineer specializing in building (and occasionally
-              designing) exceptional digital experiences. Currently, I'm focused
-              on building accessible, human-centered products.
+              designing) exceptional digital experiences. Passionate about programming, web development, and 
+              building scalable solutions to solve real-world problems.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild className="px-6 py-6">
@@ -39,7 +40,7 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute inset-0 bg-primary rounded-xl -rotate-6"></div>
               <img
-                src=""
+                src={imageUrl}
                 alt="Arpen Lad - Software Engineer"
                 className="relative z-10 rounded-xl w-72 md:w-80 lg:w-96 h-auto object-cover shadow-xl"
               />

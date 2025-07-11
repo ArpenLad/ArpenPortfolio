@@ -55,7 +55,7 @@ export default function ContactSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
+            {/* <div className="animate-slide-in" style={{ animationDelay: "0.2s" }}>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Name</label>
@@ -106,7 +106,7 @@ export default function ContactSection() {
                   </Button>
                 </div>
               </form>
-            </div>
+            </div> */}
 
             <div className="space-y-8 animate-slide-in" style={{ animationDelay: "0.4s" }}>
               <div>
