@@ -9,7 +9,7 @@
   {
     "title": "GoldDashboard app to show the price of the gold and silver in INR",
     "description": "A Dashboard which shows the glod and sliver daily price in INR using metalApis along with chart of last 5 days .A dashboard made with vibecoding using V0.dev for inital setup and github copilot for complete the dashboard.",
-    "imageSrc": "https://raw.githubusercontent.com/ArpenLad/GoldDashboard/blob/main/appIcon.png",
+    "imageSrc": "https://github.com/ArpenLad/GoldDashboard/blob/main/appIcon.png",
     "technologies": ["v0.dev", "github copilot", "React js"],
     "githubUrl": "https://github.com/ArpenLad/GoldDashboard",
     "liveUrl": "https://github.com/ArpenLad/GoldDashboard/blob/main/GoldDashboardDemo.mp4"
