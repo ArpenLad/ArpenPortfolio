@@ -43,15 +43,17 @@ function ProjectCard({
             >
               <i className="fab fa-github"></i>
             </a>
-            <a 
+            {liveUrl && 
+              <a 
               href={liveUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
               aria-label={`${title} live demo`}
-            >
-              <i className="fas fa-external-link-alt"></i>
-            </a>
+              >
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            }
           </div>
         </div>
         <p className="text-gray-400 mb-4">{description}</p>
