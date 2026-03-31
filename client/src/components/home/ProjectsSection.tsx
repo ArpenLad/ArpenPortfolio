@@ -91,7 +91,7 @@ export default function ProjectsSection() {
         <div className="text-center mt-12">
           <Button asChild variant="outline" className="border-2 border-primary text-primary hover:text-primary/80 hover:border-primary/80">
             <a 
-              href="#" 
+              href="https://github.com/ArpenLad?tab=repositories" 
               className="inline-flex items-center gap-2 px-6 py-3 font-medium"
             >
               <span>View All Projects</span>
