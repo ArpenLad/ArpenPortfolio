@@ -1,5 +1,13 @@
 [
   {
+    "title": "Newschatbot",
+    "description": "A newschat bot which can answer the question related to the news url and also can provide the summary of the news page based on the pocess urls. It is built using python, Streamlit, Langchain and google gemini.",
+    "imageSrc": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    "technologies": ["RAG", "Streamlit", "Langchain", ""],
+    "githubUrl": "https://github.com/ArpenLad/NewsChatbot",
+    "liveUrl": "https://drive.google.com/file/d/1VK23mIObAt2dLAgweTGc-8Lp0J6x80WY/view?usp=drive_link"
+  },
+  {
     "title": "PersonalBudget",
     "description": "A dashboard which can help to add/delete expences, incomes and categories and help to track the personal finance.",
     "imageSrc": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
